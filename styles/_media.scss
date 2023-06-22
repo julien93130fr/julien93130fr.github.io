@@ -1,0 +1,372 @@
+/* Réduire le padding gauche des paragraphes dans la section "À propos" */
+.about-container .left-about p{
+    padding-left: 0;
+}
+
+@media screen and (max-width: 600px) {
+    /* Réduire le padding de l'en-tête */
+    header{
+        padding: 0 !important;
+    }
+
+    /* Ajuster la taille du bouton de thème */
+    .theme-btn{
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Modifier la disposition de l'en-tête pour une seule colonne */
+    .header-content{
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 6rem;
+    }
+
+    /* Masquer l'élément de forme en haut à gauche de l'en-tête */
+    .left-header{
+        .h-shape{
+            display: none;
+        }
+    }
+
+    /* Ajuster le style de la partie droite de l'en-tête */
+    .right-header{
+        grid-row: 1;
+        padding-right: 0rem !important;
+        width: 90%;
+        margin: 0 auto;
+
+        /* Ajuster la taille et l'alignement du nom */
+        .name{
+            font-size: 2.5rem !important;
+            text-align: center;
+            padding-top: 3rem;
+        }
+    }
+
+    /* Ajuster la taille et le positionnement de l'image dans la partie gauche de l'en-tête */
+    .header-content .left-header .image{
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    /* Ajuster la disposition des contrôles en bas de la page */
+    .controls{
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--color-grey-5);
+        .control{
+            margin: 1rem .3rem;
+        }
+    }
+
+    /* Ajuster la disposition de la section "À propos" */
+    .about-container{
+        grid-template-columns: repeat(1, 1fr);
+
+        /* Ajuster la disposition de la partie droite de la section "À propos" */
+        .right-about{
+            grid-template-columns: repeat(1, 1fr);
+            padding-top: 2.5rem;
+        }
+
+        /* Ajuster le padding droit des paragraphes dans la partie gauche de la section "À propos" */
+        .left-about{
+            padding-right: 0;
+            p{
+                padding-left: 0;
+            }
+        }
+    }
+
+    /* Ajuster la disposition de la section "Timeline" */
+    .timeline{
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 6rem;
+    }
+
+    /* Ajuster le padding du conteneur principal */
+    .container{
+        padding: 2rem 2.5rem !important;
+    }
+
+    /* Ajuster la disposition des barres de progression dans la section "À propos" */
+    .about-stats{
+        .progress-bars{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    /* Ajuster la disposition des éléments dans la section "Portfolios" */
+    .portfolios{
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 6rem;
+        margin-top: 1rem;
+    }
+
+    /* Ajuster la disposition des blogs en une seule colonne */
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 6rem;
+    }
+
+    /* Ajuster la disposition de la section "Contact" en colonne */
+    .contact-content-con{
+        flex-direction: column;
+
+        /* Ajuster le style de la partie droite de la section "Contact" */
+        .right-contact{
+            margin-left: 0;
+            margin-top: 2.5rem;
+        }
+        
+    }
+
+    /* Ajuster la disposition des éléments de la deuxième colonne en colonne */
+    .contact-content-con .right-contact .i-c-2{
+        flex-direction: column;
+    }
+
+    /* Ajuster la marge du dernier élément de la deuxième colonne */
+    .contact-content-con .right-contact .i-c-2 :last-child{
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+
+    /* Ajuster la marge inférieure de la partie droite de la section "Contact" */
+    .contact-content-con .right-contact{
+        margin-bottom: 6rem;
+    }
+
+    /* Ajuster la disposition des éléments de la section "Contact" en colonne */
+    .contact-item{
+        flex-direction: column;
+        margin: 1rem 0;
+
+        /* Ajuster le style des paragraphes */
+        p{
+            font-size: 15px;
+            color: var(--color-grey-2);
+        }
+
+        /* Ajuster le style des spans */
+        span{
+            font-size: 15px;
+        }
+
+        /* Ajuster la disposition des icônes */
+        .icon{
+            grid-template-columns: 25px 1fr;
+        }
+    }
+
+    /* Ajuster le style du titre principal */
+    .main-title{
+        h2{
+            font-size: 2rem;
+
+            /* Ajuster le style des spans dans le titre principal */
+            span{
+                font-size: 2.3rem;
+            }
+
+            /* Ajuster le style du texte de fond dans le titre principal */
+            .bg-text{
+                font-size: 2.3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1432px){
+    /* Ajuster le padding du conteneur principal */
+    .container{
+        padding: 7rem 11rem;
+    }
+
+    /* Ajuster la disposition de la section "Contact" en colonne */
+    .contact-content-con{
+        flex-direction: column;
+
+        /* Ajuster le style de la partie droite de la section "Contact" */
+        .right-contact{
+            margin-left: 0;
+            margin-top: 2.5rem;
+        }
+        
+    }
+
+    /* Ajuster la disposition des éléments de la deuxième colonne en colonne */
+    .contact-content-con .right-contact .i-c-2{
+        flex-direction: column;
+    }
+
+    /* Ajuster la marge du dernier élément de la deuxième colonne */
+    .contact-content-con .right-contact .i-c-2 :last-child{
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+
+    /* Ajuster la marge inférieure de la partie droite de la section "Contact" */
+    .contact-content-con .right-contact{
+        margin-bottom: 6rem;
+    }
+
+    /* Ajuster le style du titre principal */
+    .main-title{
+        h2{
+            .bg-text{
+                font-size: 5.5rem;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:1250px){
+    /* Ajuster la disposition des blogs en deux colonnes */
+    .blogs{
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 6rem;
+    }
+
+    /* Ajuster la disposition des portfolios en deux colonnes */
+    .portfolios{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Ajuster le padding de la partie droite de l'en-tête */
+    .header-content .right-header{
+        padding-right: 9rem;
+    }
+
+}
+@media screen and (max-width:660px){
+    /* Ajuster la disposition des blogs en une seule colonne */
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Ajuster la disposition des portfolios en une seule colonne */
+    .portfolios{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:1070px){
+    /* Ajuster la disposition de la section "About" en une seule colonne */
+    .about-container{
+        grid-template-columns: repeat(1, 1fr);
+
+        /* Ajuster le padding de la partie droite de la section "About" */
+        .right-about{
+            padding-top: 2.5rem;
+        }
+    }
+
+    /* Ajuster le style du titre principal */
+    .main-title{
+        h2{
+            font-size: 4rem;
+
+            /* Ajuster le style des spans dans le titre principal */
+            span{
+                font-size: 4rem;
+            }
+
+            /* Ajuster le style du texte de fond dans le titre principal */
+            .bg-text{
+                font-size: 4.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:970px){
+    /* Ajuster le padding du conteneur principal */
+    .container{
+        padding: 7rem 6rem;
+    }
+
+    /* Ajuster le padding de la partie gauche de la section "About" */
+    .about-container .left-about{
+        padding-right: 0rem;
+    }
+
+    /* Ajuster la disposition de l'en-tête en une seule colonne */
+    .header-content{
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 6rem;
+    }
+
+    /* Ajuster le style de la partie gauche de l'en-tête */
+    .left-header{
+        /* Masquer la forme en h dans la partie gauche de l'en-tête */
+        .h-shape{
+            display: none;
+        }
+
+        /* Ajuster la largeur de l'image dans la partie gauche de l'en-tête */
+        .image{
+            width: 90% !important;
+            margin: 0 auto !important;
+            
+        }
+    }
+
+    /* Ajuster le style de la partie droite de l'en-tête */
+    .right-header{
+        grid-row: 1;
+        padding-right: 0rem !important;
+        width: 90%;
+        margin: 0 auto;
+
+        /* Ajuster la taille du nom dans la partie droite de l'en-tête */
+        .name{
+            font-size: 2.5rem !important;
+            text-align: center;
+            padding-top: 3rem;
+        }
+    }
+}
+@media screen and (max-width:700px){
+    /* Ajuster le padding du conteneur principal */
+    .container{
+        padding: 7rem 3rem;
+    }
+
+    /* Ajuster la disposition des barres de progression dans la section "About Stats" en une seule colonne */
+    .about-stats .progress-bars{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Ajuster la disposition de la partie droite de la section "About" en une seule colonne */
+    .about-container .right-about{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Ajuster la disposition de la timeline en une seule colonne */
+    .timeline{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Ajuster le style du titre principal */
+    .main-title{
+        h2{
+            font-size: 3rem;
+            /* Ajuster le style des spans dans le titre principal */
+            span{
+                font-size: 3rem;
+            }
+
+            /* Ajuster le style du texte de fond dans le titre principal */
+            .bg-text{
+                font-size: 4rem;
+            }
+        }
+    }
+}
